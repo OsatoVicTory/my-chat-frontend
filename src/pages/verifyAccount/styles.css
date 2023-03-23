@@ -1,0 +1,88 @@
+.verifyAccount {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(27,27,27,.15);
+    box-sizing: border-box;
+    padding: 20px 0px;
+}
+.verifyAccount, .vA__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.verifyAccount .vA__Top {
+    width: 100%;
+}
+.vA__Top h1 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1rem;
+    text-align: center;
+}
+.verifyAccount .vA__Content {
+    width: min(400px, 100%);
+    height: auto;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.vA__Content h1 {
+    font-size: 21px;
+    font-weight: 650;
+    line-height: 1rem;
+}
+.vA__Span {
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin-top: 10px;
+    text-align: center;
+}
+.vA__Button {
+    width: 200px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 0px 25px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vA__Button span {
+    color: white;
+    font-size: 19px;
+    font-weight: 650;
+}
+.vA__Button:hover {
+    background-color: rgb(25, 25, 25);
+}
+.vA__Med {
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+@media screen and (max-width: 400px) {
+    .verifyAccount .vA__Content {
+        border-radius: 0px;
+    }
+    .vA__Content h1 {
+        font-size: 19px;
+        line-height: 1.6rem;
+    }
+    .vA__Button {
+        padding: 13px 20px;
+    }
+    .vA__Button span {
+        font-size: 16px;
+    }
+    .vA__Span {
+        font-size: 15px;
+    }
+    .vA__Med {
+        font-size: 16px;
+    }
+}

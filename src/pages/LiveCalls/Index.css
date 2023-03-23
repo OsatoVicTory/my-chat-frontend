@@ -1,0 +1,132 @@
+div .LiveCall, .LiveCall > div,
+div .LC__Main {
+    width: 100%;
+    height: 100%;
+}
+.LiveCall__Wrapper {
+    position: relative;
+}
+.LC__Main {
+    background: #114aad;
+}
+.call-icons {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.myVideo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 150px;
+}
+div .Video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 0px;
+    right: 0px;
+}
+.Video video,
+.myVideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.LiveCall > div
+.LC__Main {
+    display: flex;
+    flex-direction: column;
+}
+.LC__Main {
+    align-items: center;
+}
+.LC__Main img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 30px;
+}
+.LC__Main h3 {
+    margin: 20px 0px 0px 0px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.LC__Main span {
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+}
+.LC__Main h2 {
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.LC__Bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    background: #062863;
+    display: flex;
+    border-radius: 30px 30px 0px 0px;
+    justify-content: center;
+}
+.LCB__Divs {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 70%;
+}
+.LCB__Divs > div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LCB__Divs svg {
+    width: 35px;
+    height: 35px;
+}
+.cursor {
+    cursor: pointer;
+}
+.end-call {
+    width: 50px !important;
+    height: 50px !important;
+    cursor: pointer;
+    background-color: rgb(215, 53, 53);
+}
+.end-call svg,
+.answer-call svg {
+    width: 30px;
+    height: 30px;
+}
+
+.incomingCall {
+    width: max-content;
+    height: auto;
+}
+.answer-call {
+    width: 50px;
+    height: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgb(120, 233, 120);
+}
+
+@media screen and (max-width: 500px) {
+    .LCB__Divs {
+        width: 80%;
+    }
+}

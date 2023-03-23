@@ -1,0 +1,89 @@
+.MessageTag {
+    width: 100%;
+    height: max-content;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: .6px solid #aeaeae;
+    cursor: pointer;
+}
+.MessageTag.media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.MessageTag.input {
+    position: relative;
+}
+.MessageTag .MessageTag__Left {
+    height: 100%;
+    width: calc(100% - 55px);
+    box-sizing: border-box;
+    padding: 2px 5px;
+}
+.MessageTag .MessageTag__Right {
+    width: 45px;
+    height: 100%;
+}
+.MessageTag__Right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 10px 0px 10px;
+}
+.Bottom .MessageTag {
+    margin-bottom: 10px;
+}
+.Bottom .MessageTag__Txt {
+    color: white !important;
+}
+.MessageTag .MessageTag__Top,
+.MessageTag__Left .MessageTag__Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.MessageTag__Top .senderName {
+    width: calc(100% - 115px);
+    height: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding-left: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.MessageTag__Top .senderNumber {
+    width: 105px;
+    font-size: 12px;
+}
+.MessageTag__Txt {
+    width: 100%;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    line-height: 1.2rem;
+}
+
+.MT__Cancel {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.MT__Cancel svg {
+    width: 11px;
+    height: 11px;
+    color: #aeaeae;
+}

@@ -1,0 +1,49 @@
+.LC__Main.incall h3 {
+    position: absolute;
+    z-index: 9;
+    left: 15px;
+    top: 15px;
+}
+div .CallsNull {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.CN-top {
+    width: max-content;
+    height: auto;
+}
+.CN-top img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.CallsNull h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.CN-add {
+    margin-top: 30px;
+    width: max-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.CN-add img {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+.CN-add h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+@media screen and (max-width: 450px) {
+    .CallsNull h2, .CN-add h1 {
+        font-size: 18px;
+    }
+}

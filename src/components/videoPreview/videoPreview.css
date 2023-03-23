@@ -1,0 +1,63 @@
+div.Media__Video,
+.Media__Video > div,
+.videoCanvas img,
+.videoCanvas canvas {
+    width: 100%;
+    height: 100%;
+}
+.Media__Video > div,
+.videoCanvas div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videoCanvas {
+    position: relative;
+}
+.videoCanvas img,
+canvas {
+    object-fit: cover;
+}
+.videoCanvas span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFFFFF;
+    background: rgba(27,27,27,.3);
+    font-size: 15px;
+    font-weight: 700;
+    /* z-index: 9; */
+}
+.videoCanvas div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 9; */
+    background-color: rgb(65, 65, 65);
+}
+/* .videoCanvas */
+.videoCanvas.small div {
+    width: 30px;
+    height: 30px;
+}
+.videoCanvas svg {
+    width: 30px;
+    height: 30px;
+}
+.videoCanvas.small {
+    border: .5px solid #e2e8f0;
+    border-radius: 10px;
+}
+.videoCanvas.small span {
+    bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.videoCanvas.small svg {
+    width: 20px;
+    height: 20px;
+}

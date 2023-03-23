@@ -1,0 +1,166 @@
+div .MediaPage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.MediaPage .MediaPage__Div,
+.MediaPage .MediaPage__Loading {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 1);
+}
+.MediaPage__Loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div .slick-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slick-slider .slick-list,
+.slick-list .slick-track {
+    height: 100% !important;
+}
+.slick-track .slick-slide,
+.slick-slide > div,
+.slick-slide > div .mP__Li {
+    height: 100% !important;
+}
+.slick-slide .MediaPage-main {
+    width: 100%;
+    height: 100%;
+}
+.slick-arrow {
+    /* background: rgb(80, 80, 80); */
+    color: white;
+}
+.slick-arrow::before {
+    color: white;
+}
+.slick-prev {
+    left: 5px !important;
+    z-index: 30;
+}
+.slick-next {
+    z-index: 30;
+    right: 15px !important;
+}
+.slick-prev::before, .slick-next::before {
+    font-size: 30px !important;
+}
+.MediaPage__main {
+    display: flex;
+    flex-direction: column;
+}
+div .MediaPage-main,
+.MediaPage-main > div {
+    width: 100%;
+}
+.MediaPage-main .mP__Img {
+    height: 100%;
+}
+.mP__Top {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border-bottom: .3px solid #e2e8f0;
+}
+.mP__Top .mp__Top__L {
+    width: calc(100% - 30px);
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.mP__Top > div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+div .mP__Txt {
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+}
+.mP__Top > div span {
+    margin-left: 10px;
+}
+.mP__Top__Left {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* margin-left: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.mP__Top__Left:hover {
+    background: rgb(232,234,233);
+}
+.mP__Top__Left svg {
+    width: 20px;
+    height: 20px;
+}
+.mP__Txt .mP__Big {
+    font-size: 17px;
+    font-weight: 550;
+    color: white;
+    width: calc(100% - 5px);
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mP__Small {
+    font-size: 14px;
+    margin-top: 3px;
+    color: #aeaeaa;
+}
+.MediaPage__main .mP__Img {
+    height: calc(100% - 60px);
+}
+.mP__Img, .mP__Li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mP__Li div img,
+.mP__Li div video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;;
+}
+.mP__Li > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mP__Li > div img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 80%;
+    object-fit: contain;
+}
+.Media__Caption {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 20;
+    bottom: 0px;
+    background-color: rgb(57, 57, 57);
+    left: 0;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 1.1rem;
+}

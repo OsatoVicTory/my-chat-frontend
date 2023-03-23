@@ -1,0 +1,200 @@
+div .DM {
+    width: 100%;
+    height: 100%;
+    background: #062863;
+    overflow: hidden;
+    position: relative;
+}
+.DM .DM__Wrapper {
+    width: 100%;
+    height: 100%;
+}
+.DM__Wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.DM__Wrapper > div {
+    width: 100%;
+}
+.DM__Top {
+    height: 60px;
+    display: flex;
+}
+.DM__Wrapper .DM__Loading,
+.DM__Wrapper .DM__Error {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.DM__Error-div {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.DM__Error-div svg {
+    width: 25px;
+    height: 25px;
+}
+.DM__Error-div h2 {
+    margin: 15px 0;
+    font-size: 25px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+.dm__Info {
+    width: max-content !important;
+    height: max-content;
+    position: absolute;
+    right: 5px;
+    top: 57px;
+    border-radius: 10px;
+    background: #568eee;
+}
+.dm__Info > div {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.dm-info-div > div {
+    width: 100%;
+    height: auto;
+    color: white;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.DM__Wrapper > ul {
+    width: 100%;
+    height: calc(100% - 70px);
+    box-sizing: border-box;
+    padding: 10px 10px 60px 10px;
+    margin: 0px;
+    list-style: none;
+    overflow-y: auto;
+}
+.DM__Lists > li {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+li .DM__unReads {
+    margin-bottom: 20px;
+    width: max-content;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #062863;
+}
+li .DM__time {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.DM__time > div {
+    width: max-content;
+    max-width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #062863;
+}
+li .DM__li {
+    width: 100%;
+    height: auto;
+}
+.DM__li.true {
+    background-color: grey;
+}
+.DM__li.false {
+    background-color: none;
+}
+.DM__Bottom {
+    height: auto;
+    max-height: 150px;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    z-index: 9;
+    display: flex;
+}
+div .deleteModal,
+div .addToContacts {
+    width: 100%;
+    height: auto;
+}
+.deleteModal > div,
+.addToContacts > div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.aTC-top, .dlM-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.aTC-top svg, .dlM-top svg {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+.dlM-main, .aTC-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.aTC-main input {
+    width: min(500px, 95%);
+    height: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 15px;
+    background-color: none;
+    outline: none;
+}
+.dlM-main h2 {
+    font-size: 17px;
+    font-weight:bold;
+    margin: 10px 0;
+}
+.aTC-save {
+    width: max-content;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+.dlM-main span {
+    width:max-content;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 13px;
+    background-color: #568eee;
+    color: #062863;
+    margin-top: 10px;
+    cursor: pointer;
+}

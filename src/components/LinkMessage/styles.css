@@ -1,0 +1,389 @@
+li .Link-Message {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    position: relative;
+}
+.Link-Message.others {
+    justify-content: flex-start;
+}
+.Link-Message.you {
+    justify-content: flex-end;
+}
+.Link-Message__Wrapper {
+    width: 230px;
+    height: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    transition: transform .5s ease-in-out;
+}
+.Link-Message__Wrapper > div,
+.Link-MessageTag .Message__Top {
+    width: 100%;
+    height: auto;
+}
+.Link-Message__Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 0px;
+}
+.Link-MessageTag {
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: .6px solid #aeaeae;
+}
+.Link-Message__Top .senderName {
+    width: calc(100% - 115px);
+    /* height: 15px; */
+    font-size: 12px;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding-left: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Link-Message__Top .senderNumber {
+    width: 105px;
+    font-size: 12px;
+}
+div .Link-MessageTag__txt {
+    width: 100%;
+    max-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    line-height: 1.2rem;
+}
+div .Link-Message-txt {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    line-height: 1.1rem;
+    display: flex;
+    flex-direction:column;
+}
+.Link-Message-txt img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.Link-Message-txt > span {
+    color: rgb(83, 133, 198);
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1.1rem;
+}
+div .LMT-base {
+    width: 100%;
+    color: white;
+    background: rgb(83, 133, 198);
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    border-radius: 5px;
+    margin-top: 5px;
+    /* border-top: 1px solid rgb(83, 133, 198); */
+}
+.Link-Message-txt span {
+    color: rgb(83, 133, 198);
+    margin-top: 5px;
+    font-size: 14.5px;
+    text-align: center;
+}
+#text {
+    width: 100%;
+}
+.Link-Message__Dets {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+}
+.Link-Message__Dets div {
+    width: max-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+.Link-Message__Dets span {
+    font-size: 12px;
+    color: #A5A4A4;
+}
+.Link-Message__Dets div svg {
+    width: 14px;
+    height: 14px;
+}
+div .jG {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.jG .jG-loading {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jG .jG-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jG-img {
+    width: 50px;
+    height: 50px;
+}
+.jG-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.jG-main h2 {
+    margin: 15px 0 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.jG-main p {
+    margin: 10px 0 0 0;
+    font-size: 13px;
+    text-align: center;
+}
+.jG-main span {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+div .jG-button {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #568eee;
+    color: white;
+}
+div .chooseReactions, .chooseReactions > div {
+    width: 100%;
+}
+div .messageReactions {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    background-color: aliceblue;
+    margin-top: 10px;
+    border: 1px solid #e2e8f0;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: .5px .5px 10px .05px rgba(0,0,0,.2), -0.5px -0.5px 10px .05px rgba(0,0,0,.2);
+}
+.messageReactions > div {
+    box-sizing: border-box;
+    padding: 5px 8px;
+    width: 30px;
+    height: 33px;
+}
+.messageReactions span {
+    margin-left: 10px;
+    font-size: 14px;
+}
+div .chooseReactions {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* transform: translate(-50%, -50%); */
+    z-index: 9999999999;
+}
+.chooseReactions .reaction-emoji {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(27,27,27,.2);
+}
+div .Reactions {
+    width: 100%;
+    height: 300px;
+}
+.Reactions > div {
+    width: 100%;
+    height: 100%;
+}
+.Reactions__Loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Reactions__Div, .RD-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Reactions__Div > div, .RD-main > div {
+    width: 100%;
+}
+.Reactions .RD-top {
+    height: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+.Reactions .RD-main {
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.RDM-div {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 0px;
+}
+.RDM-div img {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50%;
+}
+.RDM-div .RDM-txt {
+    width: calc(100% - 70px);
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.RDM-txt span {
+    font-size: 14px;
+    width: calc(100% - 0px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.RDM-txt p {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #A5A4A4;
+}
+.RDM-div .emoji {
+    width: 25px !important;
+    margin: 0;
+    margin-left: 5px !important;
+}
+.RDT-div {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 7px;
+}
+.RDT-div.true {
+    border-bottom: 3px solid #568eee;
+}
+.RDT-div > div:first-child {
+    padding-left: 0px;
+}
+.RMD-div {
+    display: grid;
+    grid-template-columns: 40px calc(100% - 90px) 30px;
+    column-gap: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-bottom: .5px solid #e2e8f0;
+}
+.RDT-div span {
+    margin-left: 0px;
+}
+.emoji {
+    width: 30px;
+    height: 30px;
+}
+.RDT-div span, .RMD-div span {
+    font-size: 15px;
+}
+.RMD-div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.more__Reactions {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99999999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgba(10,10,10,.2);
+}
+.mR__Wrapper {
+    width: 290px;
+    height: 350px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 90px;
+    margin-right: 20px;
+}
+.mR__Wrapper > div,
+.mR__Wrapper .EmojiPickerReact {
+    width: 100% !important;
+    height: 100% !important;
+}
+.mR__Wrapper .EmojiPickerReact .epr-preview {
+    display: none !important;
+}
+.EmojiPickerReact button .epr-btn {
+    padding: 0;
+}
+.EmojiPickerReact .epr-header .epr-header-overlay {
+    display: none !important;
+}

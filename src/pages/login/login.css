@@ -1,0 +1,295 @@
+.login {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: rgba(27,27,27,.15);
+    /* overflow-y: scroll; */
+    box-sizing: border-box;
+    padding: 10px 0px 20px 0px;
+}
+.login .login__Content {
+    width: 100%;
+    height: auto;
+}
+.login h1 {
+    margin: 0;
+}
+.login__Content, .lM__Content, .lM__Content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login__Top, .login__Providers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login__Content .login__Top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    transition: all .1s ease-in-out;
+}
+.login .login__Top.sticky {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.login__Top.sticky h1 {
+    color: white;
+}
+.login__Top img {
+    width: 80px;
+    height: 40px;
+    object-fit: cover;
+}
+.login__Top.sticky .lT__Left > div {
+    color: white;
+}
+.login__Top.sticky .lT__Left .founder {
+    color: white;
+}
+.lT__Left {
+    width: max-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.lT__Left > div, .lT__Left .founder {
+    width: max-content;
+    height: auto;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.lT__Left > div:hover {
+    color: rgb(90, 89, 89);
+}
+.founder {
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+}
+.login__Top.sticky .founder {
+    border: 1px solid white;
+}
+.founder:hover {
+    background-color: black;
+    color: white !important;
+}
+.login__Top.sticky .founder:hover {
+    background-color: rgb(233, 234, 232);
+    color: black !important;
+}
+.login__Content .login__Main {
+    width: min(450px, 100%);
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.login__Main .lM__Content {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.lM__Content form {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+.lM__Content form > input {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    background: none;
+    outline: none;
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+    margin-top: 10px;
+}
+.lM__Content form > input:focus {
+    border: 1px solid black;
+}
+.lM__Content form > input::placeholder {
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+.lM__Content form .login__Button {
+    width: 120px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    transition: margin-left .3s ease-out;
+    background-color: rgb(16, 16, 16);
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lM__Content .login__Button.middle {
+    margin-left: 0px;
+}
+.lM__Content .login__Button.right {
+    margin-left: calc(100% - 120px);
+}
+.lM__Content .login__Button.left {
+    margin-left: calc(-100% + 120px);
+}
+.login__Button:hover {
+    background-color: rgb(25, 25, 25);
+} 
+.login__Button input {
+    width: 100%;
+    background: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 0px;
+    cursor: pointer;
+}
+.lM__Content .login__Providers {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.login__Providers > div {
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+}
+.login__Providers > div:hover {
+    background-color: rgb(233, 234, 232);
+}
+.login__Providers > div .lg-svg {
+    width: 18px;
+    height: 18px;
+}
+.login__Providers > div span {
+    margin-left: 10px;
+}
+.lM__Content .requestSignup {
+    width: max-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.requestSignup .login__SmallThick {
+    margin-left: 10px;
+}
+/* texts */
+.lT__Left > div, .login__SmallThick {
+    font-size: 15px;
+    font-weight: 650;
+}
+.login__Top h1 {
+    font-size: 23px;
+    font-weight: 700;
+}
+.lM__Content .login__Med {
+    font-size: 16px;
+    line-height: 1.7rem;
+    margin-top: 10px;
+}
+.lM__Content h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.5rem;
+}
+.login__Small {
+    font-size: 15px;
+    font-weight: 550;
+    margin-top: 15px;
+}
+.login__Small.cursor, .login__SmallThick.cursor {
+    cursor: pointer;
+}
+.login__Small.cursor:hover, .login__SmallThick.cursor:hover {
+    color: rgb(90, 90, 90);
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .lM__Content .login__Button.right {
+        margin-left: 0px;
+    }
+    .lM__Content .login__Button.left {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .login .login__Main {
+        border-radius: 0px;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .lT__Left > div {
+        font-size: 15px;
+    }
+    .lM__Content h1 {
+        font-size: 20px;
+    }
+    .lM__Content .login__Med {
+        font-size: 15px;
+        line-height: 1.4rem;
+    }
+    .lM__Content form > input {
+        font-size: 15px;
+        padding: 12px;
+    }
+    .lM__Content form > input::placeholder {
+        font-size: 15px;
+        color: rgb(153, 153, 153);
+    }
+    .lM__Content form .login__Button {
+        padding: 15px;
+    }
+    .login__Small {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .lM__Content .login__Providers {
+        margin-top: 25px;
+    }
+    .login__Providers > div {
+        padding: 15px 0px;
+    }
+    .login__SmallThick {
+        font-size: 15px;
+    }
+    .lM__Content .requestSignup {
+        margin-top: 25px;
+    }
+    .requestSignup .login__SmallThick {
+        font-size: 13px;
+    }
+}

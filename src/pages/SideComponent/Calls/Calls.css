@@ -1,0 +1,279 @@
+div .Calls {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #062863;
+}
+.Calls > div {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.call-home-icons {
+    width: 15px;
+    height: 15px;
+    color: white;
+}
+.call-home-icons.green {
+    color: green;
+}
+.call-home-icons.red {
+    color: red;
+}
+.Call__Wrapper > div {
+    width: 100%;
+    height: auto;
+}
+.call__Absolute, .call__Icon, .calls__Loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call__Div {
+    display: grid;
+    grid-template-columns: 40px calc(100% - 90px) 30px;
+    column-gap: 10px;
+    align-items: center;
+}
+.call__Img {
+    width: 40px;
+    height: 40px;
+}
+.call__Img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.call__Txt h3, .call__Txt span {
+    width: calc(100% - 1px);
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.call__Txt h3 {
+    font-size: 15px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.call__Dets {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.call__Txt span {
+    font-size: 13px;
+    color: #A5A4A4;
+}
+.call__Dets span {
+    margin-top: 0px;
+    margin-left: 5px;
+}
+.call__Dets > div {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.call__Dets > div svg {
+    width: 15px;
+    height: 15px;
+}
+.call__Icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.call__Icon svg {
+    width: 20px;
+    height: 20px;
+}
+.tt {
+    box-sizing: border-box;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+ .call__Div {
+    box-sizing: border-box;
+    padding: 10px;
+}
+.call__Absolute {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    cursor: pointer;
+    position:absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgb(101, 249, 101);
+}
+.call__Absolute svg {
+    width: 25px;
+    height: 25px;
+}
+.placeCall {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 99;
+    background: #062863;
+    overflow: hidden !important;
+}
+.placeCall > div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+div .pC__Wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+} 
+
+.pC__Wrapper > div,
+.pC__Wrapper ul, .pC__Wrapper ul li {
+    width: 100%;
+    height: auto;
+}
+.pC__Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pC__Top {
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+    background-color: #062863;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,.2);
+}
+.pC__Top input {
+    width: calc(100% - 30px);
+    height: auto;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+.Call__Wrapper ul,
+.pC__Wrapper ul {
+    margin-top: 5px;
+    padding: 0;
+    list-style: none;
+}
+.pC__Wrapper ul {
+    box-sizing: border-box;
+    padding-top: 45px;
+}
+.pC__List {
+    display: grid;
+    grid-template-columns: 40px calc(100% - 130px) 30px 30px;
+    column-gap: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.pC__List img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+div .callLink {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.callLink-select {
+    width: max-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.callLink-select > div {
+    width: 100%;
+    height: auto;
+}
+.callLink-selected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.callLink-selected span {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.callLink-selected-icon {
+    width: 15px;
+    height: 15px;
+}
+.callLink-selected-icon.true {
+    transform: rotate('180deg');
+}
+.callLink-selected-icon.false {
+    transform: rotate('0deg');
+}
+.callLink-options {
+    top: 30px;
+    left: 0px;
+    position: absolute;
+    z-index: 999;
+    border-radius: 10px;
+    width: max-content;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: .5px .5px 10px .05px rgba(0,0,0,.2), -0.5px -0.5px 10px .05px rgba(0,0,0,.2);
+}
+.callLink-options > div {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 7px 3px;
+}
+div .callLinkDiv {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+}
+.callLink-txt {
+    width: max-content;
+    box-sizing: border-box;
+    padding-right: 10px;
+    font-size: 13.5px;
+    border-right: 1px solid #e2e8f0;
+}
+.callLink-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 14px;
+    height: 14px;
+}

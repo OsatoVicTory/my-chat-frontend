@@ -1,0 +1,46 @@
+div .reactionEmoji {
+    width: 230px !important;
+    height: max-content;
+    background-color: rgb(35, 80, 228);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.reactionEmoji > div {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.reactionEmoji > div:first-child {
+    margin-left: 0px;
+}
+.reactionEmoji > div img,
+.reactionEmoji > div svg {
+    width: 100%;
+    height: 100%;
+    color: #b9b9b9;
+}
+div .Emoji {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto; 
+    background: FFFFFF;
+}
+.Emoji .EmojiPickerReact {
+    width: 100% !important;
+    height: 100% !important;
+}
+.Emoji .EmojiPickerReact .epr-header .epr-header-overlay {
+    display: none !important;
+}
+.Emoji .EmojiPickerReact .epr-preview,
+.mR__Wrapper .EmojiPickerReact .epr-preview {
+    display: none !important;
+}
+.reactionEmoji .EmojiPickerReact button.epr-btn,
+.Emoji .EmojiPickerReact button.epr-btn {
+    padding: 0 !important;
+}

@@ -1,0 +1,308 @@
+div .sC, .sC > div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #062863;
+}
+.sC {
+    position: relative;
+}
+.sC__Wrapper > div,
+.sC__Links ul {
+    width: 100%;
+}
+.sC__Top, .sC__Links ul, .sP__Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sC__Icons, .sC__Link, .sP__List, .sC__Divs {
+    display: flex;
+    align-items: center;
+}
+.sC__Icons > div, .sC__Link > div,
+.sP__Icons, .sP__Save, .sP__Picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sC__Top {
+    box-sizing: border-box;
+    padding: 10px;
+    height: 50px;
+}
+.sC__Top__Div, .sC__Links {
+    box-shadow: 0px 5px 10px 0 rgba(0,0,0,.1);
+}
+.sC__Top h2 {
+    font-size: 20px;
+    color: white;
+    font-weight: 650;
+}
+.sC__Icons {
+    width: max-content;
+    height: auto;
+}
+.sC__Icons > div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.sC__Icons > div:hover {
+    background-color: #e2e8f0;
+}
+.sC__Icons svg {
+    width: 22px;
+    height: 22px;
+}
+.sC__Links {
+    height: 50px;
+    border-bottom: rgba(49, 49, 49, .2);
+}
+.sC__Links ul {
+    height: 100%;
+    padding: 0;
+    margin: 5px 0px 0px 0px;
+}
+.sC__Link {
+    width: max-content;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+.sC__Links ul > li:first-child {
+    margin-left: 0px;
+}
+.sC__Link > span {
+    font-size: 14px;
+    color: #A5A4A4;
+}
+.sC__Link > div {
+    margin-left: 5px;
+    /* background-color: #A5A4A4; */
+}
+.sC__Link.true {
+    border-bottom: 2px solid rgb(149, 228, 246);
+}
+.sC__Link.true span {
+    color: rgb(149, 228, 246);
+}
+.sC__Link.true > div {
+    background-color: rgb(149, 228, 246);
+    color: rgb(149, 228, 246);
+}
+.main-home-icons {
+    width: 15px;
+    height: 15px;
+    color: white;
+}
+.sC__Link .round {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(149, 228, 246);
+    color: white !important;
+    font-size: 11.5px;
+    font-weight: bold;
+}
+div .sC__Divs {
+    height: calc(100% - 100px);
+    overflow: hidden;
+    transition: transform .5s ease-in-out;
+}
+.sC__Divs > div {
+    height: 100%;
+}
+.sC__Info {
+    position: absolute;
+    z-index: 99;
+    right: 5px;
+    top: 5px;
+    width: max-content !important;
+    height: max-content;
+    background-color: #062863;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgb(149, 228, 246);
+    box-sizing: border-box;
+    padding: 6px 0px;
+}
+.sC__Info > div {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.statusPrivacy {
+    position: absolute;
+    z-index: 99;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #062863;
+}
+.statusPrivacy > div,
+.sP__Wrapper ul {
+    width: 100%;
+    height: 100%;
+}
+.sP__Wrapper, .sP__Wrapper ul, .txts {
+    display: flex;
+    flex-direction: column;
+}
+.sP__Wrapper ul {
+    overflow-y: auto;
+    margin-top: 0px;
+    list-style: none;
+    padding: 0;
+}
+.sP__Wrapper > div,
+.sC__Wrapper ul li {
+    width: 100%;
+    height: auto;
+}
+.sP__Wrapper .sP__Top {
+    box-sizing: border-box;
+    padding: 10px;
+}
+.sP__Wrapper h3 {
+    font-size: 14px;
+    color: #A5A4A4;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.sP__Top .txts {
+    width: calc(100% - 120px);
+}
+.nowrap-txts {
+    width: calc(100% - 0px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.sP__Icons {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.sP__Icons svg {
+    width: 20px;
+    height: 20px;
+}
+.sP__Top > div {
+    margin-left: 10px;
+}
+.sP__Top > div:first-child {
+    margin-left: 0px;
+}
+.sP__Top h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 15px;
+    width: calc(100% - 45px);
+}
+.sP__Top input, .sC__Top input {
+    width: calc(100% - 30px);
+    height: auto;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 5px;
+}
+.sC input::placeholder {
+    color: #FFFFFF;
+}
+.sP__Picker {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #A5A4A4;
+}
+.sP__Picker > div {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.sP__Picker.true {
+    border: 2px solid rgb(149, 228, 246);
+}
+.sP__Picker.true > div {
+    background-color: rgb(149, 228, 246);
+}
+.sP__Picker span {
+    color: #FFFFFF;
+    margin-left: 15px;
+    font-size: 14px;
+}
+.sP__List {
+    box-sizing: border-box;
+    padding: 10px;
+}
+.sP__List span {
+    margin-left: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.sP__Contact__List {
+    display: grid;
+    grid-template-columns: 40px calc(100% - 90px) 30px;
+    column-gap: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.sP__Contact__List img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.sP__Contact__List .sP__Icons.Hide {
+    background-color: rgb(198, 56, 56);
+}
+.sP__Contact__List .sP__Icons.Show {
+    background-color: rgb(67, 185, 67);
+}
+.sP__Save {
+    position: fixed;
+    left: 240px;
+    bottom: 30px;
+    background-color: rgb(67, 185, 67);
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.3), -5px -5px 15px rgba(0,0,0,.3);
+    width: 45px !important;
+    height: 45px !important;
+    cursor: pointer;
+}
+.sP__Save svg {
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width: 770px) {
+    .sP__Save {
+        left: calc(100% - 70px);
+    }
+}

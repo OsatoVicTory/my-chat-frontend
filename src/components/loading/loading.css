@@ -1,0 +1,34 @@
+.loadingSpinner {
+    border-radius: 50%;
+    /* background: #FFFFFF; */
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid rgb(20, 20, 20);
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+div .LoadingPage {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.LoadingPage h2 {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+}
+.LoadingPage > div {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+}

@@ -1,0 +1,154 @@
+.Bottom {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 9999999999;
+    bottom: 1px;
+    left: 0px;
+    background: #062863;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.Bottom .Bottom__Wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.Bottom__Wrapper > div {
+    width: 100%;
+    height: auto;
+}
+.Bottom__Top, .inputsDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.Bottom__Top .inputsDiv {
+    width: calc(100% - 60px);
+    height: auto;
+}
+.inputsDiv > div, .voiceNote,
+.inputsDiv > div label {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.inputsDiv > div,
+.inputsDiv > div label {
+    width: 35px;
+    height: 35px;
+}
+.inputsDiv > div:hover {
+    background-color: grey;
+}
+.Input-icons {
+    color: white;
+    width: 25px;
+    height: 25px;
+}
+.inputsDiv input {
+    display: none;
+}
+.inputsDiv textarea {
+    width: calc(100% - 90px);
+    height: auto;
+    max-height: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 10px;
+    overflow-y: auto;
+    background-color: rgb(35, 80, 228);
+    color: white;
+    scrollbar-width: thin;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.inputsDiv textarea::placeholder {
+    color: white;
+}
+.imagesSelected .imagesSelectedDiv {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+    scrollbar-width: thin;
+}
+.imagesSelectedDiv > ul {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: auto;
+}
+.imagesSelectedDiv::-webkit-scrollbar,
+.inputsDiv textarea::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.iS__List {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    position: relative;
+}
+.iS__List img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.iS__List:first-child {
+    margin-left: 0px;
+}
+
+.iS__Cancel {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.iS__Cancel svg {
+    width: 12px;
+    height: 12px;
+}
+
+.senderDiv {
+    width: 40px;
+    margin-left: 10px;
+    background-color: rgb(35, 80, 228);
+    height: 40px;
+    border-radius: 10px;
+}
+.senderDiv > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.senderDiv > div svg {
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+}
+div .input-emoji {
+    width: 100%;
+    height: 200px;
+}
