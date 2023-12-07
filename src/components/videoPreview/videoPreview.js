@@ -37,7 +37,10 @@ const VideoPreview = ({ val, navigateToMedia, id, small }) => {
         }
         videoEle.addEventListener("canplay", onLoad);
 
-        return () => videoEle.removeEventListener("load", onLoad);
+        return () => {
+            videoEle.removeEventListener("load", onLoad);
+            if(videoCanvas?.snapShot) URL.revokeObjectURL(videoCanvas.snapShot);
+        }
     }, []);
 
     return (

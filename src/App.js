@@ -1,45 +1,28 @@
-import './App.css';
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import AppMain from "./AppMain";
-import LogInPage from "./pages/login/login"; 
-import SignUpPage from './pages/signup/signup';
-import VerifyAccount from './pages/verifyAccount';
-// import LandingPage from './pages/landingpage/landingPage';
-import { useDispatch, useSelector } from 'react-redux';
+import { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Alerter from "./components/alerter";
-import { statusMessageActions } from './state';
+import { statusActions } from './state';
+import './App.css';
+import CallsPage from './pages/Call';
  
 function App() {
-
-  const { statusMessage } = useSelector(state => state);
   const dispatch = useDispatch();
-  const{ setStatusMessage } = bindActionCreators(statusMessageActions, dispatch);
-  
-  useEffect(() => {
-    if(statusMessage?.type) {
-      setTimeout(() => {
-        setStatusMessage({});
-      }, 3000);
-    }
-  }, [JSON.stringify(statusMessage)])
+  const { setStatusData } = bindActionCreators(statusActions, dispatch);
+  const socket = {
+    on:() => null, emit:() => null, disconnect: () => null
+  };
+  const closePage = () => null;
+  const data = {
+    type: 'audio', callerId:'123', 
+    receiverId: '456', receiverName: 'Tory', 
+    image: '', signal: '', callerName: 'Osato' 
+  }; 
 
-  
   return (
-    <BrowserRouter>
-      <div className='app'>
-        <Alerter data={statusMessage} />
-        <Routes>
-          {/* <Route path="/" element={<LandingPage />} /> */}
-          <Route path="/login" element={<LogInPage />} />
-          <Route path="/signup" element={<SignUpPage />} />
-          <Route path="/verify-account/:token" element={<VerifyAccount />} />
-          <Route path="/app/*" element={<AppMain />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
-}
+    <div className='App'>
+      <CallsPage data={data} socket={socket} closePage={closePage} />
+    </div>
+  )
+};
 
 export default App;

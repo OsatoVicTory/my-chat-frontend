@@ -1,8 +1,4 @@
-const INITIAL_STATE = {};
-//     mine: [],
-//     recentUpdate: [],
-//     viewedUpdate: []
-// }
+const INITIAL_STATE = []
 
 const filterById = (array, id) => {
     return array.filter((val, idx) => idx !== id);
@@ -27,7 +23,7 @@ const statusReducer = (state = INITIAL_STATE, action) => {
         case "GET_STATUS_DATA":
             return state
         case "SET_STATUS_DATA":
-            return {...action.payload}
+            return [...action.payload]
         case "SET_MY_STATUS":
             return {...state, user: action.payload}
         case "DELETE_MY_STATUS":

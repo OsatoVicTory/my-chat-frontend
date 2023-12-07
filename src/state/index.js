@@ -12,3 +12,4 @@ export * as curCallActions from './actions/curCall';
 export * as statusActions from "./actions/status";
 export * as loadedStateActions from "./actions/loadedState";
 export * as statusUploadImageActions from "./actions/statusUploadImage";
+export * as totalUnreadsActions from "./actions/totalUnreads";

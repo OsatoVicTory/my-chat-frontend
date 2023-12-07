@@ -13,6 +13,7 @@ import selectedChatsReducer from "./selectedChats";
 import curCallReducer from "./curCall";
 import loadedStateReducer from "./loadedState";
 import statusUploadImageReducer from "./statusUploadImage";
+import totalUnreadsReducer from "./totalUnreads";
 
 const reducers = combineReducers({
     user: userReducer,
@@ -29,6 +30,7 @@ const reducers = combineReducers({
     status: statusReducer,
     loadedState: loadedStateReducer,
     statusUploadImage: statusUploadImageReducer,
+    totalUnreads: totalUnreadsReducer,
 });
 
 export default reducers;

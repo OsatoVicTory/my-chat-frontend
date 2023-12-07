@@ -1,46 +1,146 @@
-.app {
+.app, .App {
     width: 100%;
     height: 100vh;
-    /* background: #062863; */
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
     box-sizing: border-box;
     /* font-family: U8, sans-serif; */
 }
-.svgs-black {
-    color: black !important;
+body {
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
-.app > div {
+
+code {
+font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root {
+--green: #25d366;
+--grey: #A5A4A4;
+--bordergrey: #e2e8f0;
+--stdbackground: #f0f2f5;
+--fnt500: 18px;
+--fnt400: 15px;
+--fnt300: 12px;
+--white: #fff;
+--lightblue: rgb(40, 145, 250);
+--yellow: rgba(245, 245, 16, 0.992);
+--black: black;
+--red: red;
+--transparentshadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -4px,
+rgba(0, 0, 0, 0.3) 0px 6px 12px -6px;
+--boxmessage: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+--boxendomodal: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+--exomodaloverlay: hsla(0, 0%, 100%, 0.85);
+--boxexomodal: 0 17px 45px 0 rgba(11, 20, 26, 0.18), 0 12px 15px 0 rgba(11, 20, 26, 0.24);
+}
+.fnt-500, .txt-17 {
+font-size: 17px;
+line-height: 1.5rem;
+}
+.fnt-400, .in-message-span, .txt-14 {
+font-size: 14px;
+line-height: 1.2rem;
+}
+.in-message-span.searched {
+background-color: var(--green);
+color: var(--white);
+}
+.fnt-300 {
+font-size: 12px;
+line-height: 1.2rem;
+}
+.bold {
+font-weight: 500;
+}
+.white {
+color: var(--white);
+}
+.black {
+color: var(--black);
+}
+.grey {
+color: var(--grey);
+}
+.red {
+color: var(--red);
+}
+.green {
+color: var(--green);
+}
+.blue, .light-blue {
+color: var(--lightblue);
+}
+.app-main {
+    width: 100vw;
+    height: 100vh;
+}
+.app-main > div {
     width: 100%;
     height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-.App > div {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
+.emoji-span {
     overflow: hidden;
-    display: flex;
 }
-
-.main > div {
+.emoji--span {
+    color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    image-rendering: -webkit-optimize-contrast;
+}
+.app-emoji .EmojiPickerReact {
+    width: 100% !important;
+    height: 100% !important;
+}
+div .NoData__ {
+    width: 100%;
     height: 100%;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+.NoData__ img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+/* .emoji-span {
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+}
+.emoji-span.big-emoji {
+font-size: 33px;
+} */
+
+@media screen and (max-width: 400px) {
+.fnt-500, .txt-17 {
+    font-size: 15px;
+    line-height: 1.2rem;
+}
+.fnt-400, .in-message-span, .txt-14 {
+    font-size: 13px;
+    line-height: 1.1rem;
+}
+.fnt-300 {
+    font-size: 11.5px;
+    line-height: 1.0rem;
+}
 }
 
-
-div .Left {
-    width: 320px;
+/* Dark Modes */
+.Dark-mode .bg-white {
+background-color: var(--stdbackground);
 }
-div .Right {
-    width: calc(100% - 320px);
-}
-
-
-@media screen and (max-width: 800px) {
-    div .Left.true, div .Right.true {
-        width: 100%;
-    }
-    .Right.false, .Left.false {
-        width: 0px;
-        display: none;
-    }
+.Dark-mode.black {
+color: white;
 }
